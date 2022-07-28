@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'love-christabele';
+    src: url("./font/loveChristabele/LoveChristabela.otf");
+}
+@font-face {
+    font-family: 'sweet-strowbery';
+    src: url("./font/sweetStrowbery/Sweety\ Strawberry\ TTF.ttf");
+}
+@font-face {
+    font-family: 'segoe-ui';
+    src: url("./font/segoeUi/Segoe\ UI.ttf");
+}
+:root{
+    /* ---bg-card-color : #BAABDA;
+    ---border-card-color : #B1BCE6; */
+    ---bg-card-color :  #9cd8d8;
+    ---border-card-color : #9cd8d8;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
+}
+
+/* NAVBAR */
+.navbar{
+    position: sticky;
+    top:0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #F2DAC3;
+    padding: 10px;
+    height: 30px;
+    font-family: monospace;
+}
+
+/* ADD POST */
+.container-add-card{
+    max-width : 30rem;
+    margin-bottom : 50px;
+    border : 2px solid #E6BA95;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.header-add-card{
+    font-family: 'sweet-strowbery';
+    display: flex;
+    gap: 10px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.header-add-card h1{
+    font-size: 1.2rem;
+}
+.header-add-card p{
+    font-weight: 200;
+}
+.header-add-card img{
+    width : 4rem;
+    height:4rem;
+}
+
+.container-add-card textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    border-bottom : 1px solid #E6BA95;
+}
+
+.footer-add-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-add-card button{
+    font-size: 0.9rem;
+    background-color: #f5bebb;
+    padding: 5px 10px;
+    border : 2px solid rgb(243, 119, 119);
+    font-weight: 600;
+}
+.action-add-card{
+    font-size: 1.4rem;
+}
+/* POSTS */
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+.header-card{
+    font-family: 'sweet-strowbery';
+    background-color: #f5bebb;
+    padding: 0.5rem;
+    display : flex;
+    
+}
+.header-card img {
+    width : 4rem;
+    height : 4rem;
+    border-radius : 50%;
+    margin-right: 0.5rem;
+    border : 4px solid #E6BA95;
+}
+.header-detail{
+    display: flex;
+    flex-direction: column;
+    margin : auto 0px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.header-detail h1{
+    font-size: 1.1rem;
+}
+.header-detail p {
+    font-size: 0.9rem;
+}
+.card{
+    position: relative;
+    width : 30rem;
+    height : auto;
+    /* background-color: var(---bg-card-color); */
+    font-size: 1.2rem;
+    border : 2px solid #E6BA95;
+
+}
+.body-card{
+    padding: 1rem;
+    /* font-family: 'love-christabele'; */
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-size: 1.rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    /* color : white; */
+    color: gray;
+
+}
+
+.body-card img{
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+}
+
+.love-icons{
+    position: absolute;
+    top: 5px;
+    right:5px;
+    color : rgb(243, 119, 119);
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.icon-actios{
+    display: flex;
+    gap : 1rem;
+}
+
+.icon-actios span{
+    background-color:  #ffde91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    font-weight: 100;
+    color : black;
+}
+.likes-info{
+    font-size: 15px;
+    margin-top: 5px;
+    color : gray;
+}
+
+.action p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+    color: gray;
+}
